@@ -51,7 +51,7 @@ It will create a build folder that you can use to deploy the app in production.
 ## Deployment 👇
 
 The app is deployed on Firebase.
-Please go through this link to have a complete knowledge of deploying react app on Firebase: 👇
+Please go through this link to have a complete knowledge of deploying react app on Firebase: 
 **https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425**
 
 
