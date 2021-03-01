@@ -1,0 +1,222 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #232933;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.modelLoader{
+  color: #F08D2C;
+}
+.header {
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background: #232933;
+    font-size: 27px;
+    padding: 5px 0;
+}
+
+.inputHolder {
+    margin: 15px 0;
+}
+
+.mainWrapper {
+    padding: 0 10px;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.inputHolder { 
+    padding: 0 10px;
+    display: flex; 
+
+    input[type='text'] {
+        max-width: 400px;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 20px;
+        display: inline-block;
+        border: 1px solid #222;
+        outline: none;
+    }
+
+    .uploadInput { 
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .or {
+        align-items: center;
+        color: white;
+        display: inline-flex;
+        padding: 0 20px;
+    }
+
+    .uploadImage {
+        padding: 8px 16px;
+        font-size: 16px;
+        background:#F08D2C;
+        color: #fff;
+        display: inline-block;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.imageHolder {
+    width: 60%;
+    display: block;
+    flex: 0 0 60%;
+    max-width: 900px;
+    height: 70vmin;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    &:empty {
+        display: none;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.resultsHolder {
+    padding: 30px;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .result {
+        border: 1px solid white;
+        background-color: chocolate;
+        border-radius: 10px;
+        margin: 0 0 10px;
+        padding: 10px;
+
+        &:first-of-type {
+            border-color:white;
+            border-radius: 10px;
+            background-color: #F08D2C;
+
+            .name { color: black; }
+            .confidence { color: #dfdfdf; 
+            font-weight: 600;}
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .confidence {
+            display: block;
+            color: white;
+            font-weight: 500;
+
+            .bestGuess {
+                background: black;
+                border-radius: 10px;
+                padding: 2px 6px;
+                color:white;
+                margin-left: 3px;
+            }
+        }
+    }
+}
+
+.button {
+    padding: 12px 17px;
+    font-size: 20px;
+    font-weight: 200;
+    background: #F08D2C;
+    border-radius: 20px !important;
+    color: #fff;
+    display: inline-block;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.recentPredictions {
+    margin: 40px 0 0;
+    background: #4C5765;
+    padding: 10px;
+
+    h2 {
+        color:white;
+        font-size: 26px;
+        margin: 10px 0;
+    }
+    
+    .recentImages {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .recentPrediction {
+        flex: 0 0 20%;
+        cursor: pointer;
+
+        @media (max-width: 1100px) {
+            flex: 0 0 25%;
+        }
+
+        @media (max-width: 870px) {
+            flex: 0 0 33.3%;
+        }
+
+        @media (max-width: 700px) {
+            flex: 0 0 50%;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+
+            @media (max-width: 700px) {
+                height: 260px;
+            }
+        }
+    }
+}
