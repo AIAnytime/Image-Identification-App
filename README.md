@@ -3,7 +3,7 @@
 <a href="https://ibb.co/RSqWdwk"><img src="https://i.ibb.co/rtVJNrR/Image-Identification-App.png" alt="Image-Identification-App" border="0"></a>
 
 
-**The app is live here dployed on Firebase:** https://identifyimage-2021.web.app/
+**The app is live here deployed on Firebase:** https://identifyimage-2021.web.app/
 
 An image identification application **built in React and deployed on Firebase** using machine learning framework for browser **"TensorFlow.js" and pre-trained model for image classification "MobileNet".**
 
